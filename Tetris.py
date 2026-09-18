@@ -166,10 +166,10 @@ def main():
 
         #Marquer les records
         
-        with open("data/score.txt", "r") as record:
+        with open("score.txt", "r") as record:
             record = int(record.read())
         if score > record:
-            with open("data/score.txt", "w") as record:
+            with open("score.txt", "w") as record:
                 record.write(str(score))
     
 
